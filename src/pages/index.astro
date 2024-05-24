@@ -2,11 +2,29 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="viewport" content="width=device-width" />		
+		<title>Astro Ship</title>
 	</head>
 	<body>
-		<h1>Welcome Astro</h1>
+		<main class="w-full max-w-screen-lg mx-auto">
+			<header class="flex justify-between items-center mt-5 px-5 lg:px-10">
+				<h1 class="font-bold text-sm">Astro<span class="font-medium text-slate-400">ship</span></h1>
+				<nav class="hidden lg:block">
+					<ul class="flex items-center gap-4 text-xs text-slate-600 font-medium">
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/work">Work</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</nav>				
+				<div class="items-center gap-5 hidden lg:flex">
+					<a href="#" class="text-xs font-medium text-slate-600">Login</a>
+					<a href="#" class="bg-slate-800 text-white px-4 py-2 text-xs font-medium rounded-sm">Sign up</a>					
+				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list lg:hidden" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+				</svg>
+			</header>
+		</main>
 	</body>
 </html>
