@@ -1,0 +1,21 @@
+---
+import '../styles/global.css'
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />		
+		<title>Astro Ship</title>
+  </head>
+  <body>
+    <main class="flex items-start justify-start h-screen w-screen">
+      <div class="w-[320px] h-screen bg-green-600">
+        Sidebar
+      </div>
+      <div class="flex-grow bg-red-600 h-screen">
+        <slot /> <!-- your content is injected here -->
+      </div>
+    </main>
+  </body>
+</html>
